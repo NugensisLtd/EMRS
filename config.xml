@@ -6,7 +6,7 @@
   xmlns:gap="http://phonegap.com/ns/1.0">
   <name>EMRS</name>
   <description>
-        An Ionic Framework and Cordova project.
+        Mobile App for managing EMRS data capture.
     </description>
   <author email="development@nugensis.co.uk" href="http://nugensis.co.uk/EMRS">
       Ionic Framework Team
