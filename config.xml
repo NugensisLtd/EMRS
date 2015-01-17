@@ -20,4 +20,6 @@
   <feature name="StatusBar">
     <param name="ios-package" value="CDVStatusBar" onload="true"/>
   </feature>
+  <gap:plugin name="org.apache.cordova.StatusBar" source="plugins.cordova.io" />
+  <gap:plugin name="org.apache.cordova.battery-status" source="plugins.cordova.io" />
 </widget>
