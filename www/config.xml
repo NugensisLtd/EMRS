@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<widget id="uk.co.nugensis.emrs" 
+  version="0.0.1" 
+  xmlns="http://www.w3.org/ns/widgets" 
+  xmlns:cdv="http://cordova.apache.org/ns/1.0"
+  xmlns:gap="http://phonegap.com/ns/1.0">
+  <name>EMRS</name>
+  <description>
+        Mobile App for managing EMRS data capture.
+    </description>
+  <author email="development@nugensis.co.uk" href="http://nugensis.co.uk/EMRS">
+      Ionic Framework Team
+    </author>
+  <content src="index.html"/>
+  <access origin="*"/>
+  <preference name="webviewbounce" value="false"/>
+  <preference name="UIWebViewBounce" value="false"/>
+  <preference name="DisallowOverscroll" value="true"/>
+  <preference name="BackupWebStorage" value="none"/>
+  <feature name="StatusBar">
+    <param name="ios-package" value="CDVStatusBar" onload="true"/>
+  </feature>
+  <gap:plugin name="org.apache.cordova.statusbar" source="plugins.cordova.io" />
+  <gap:plugin name="org.apache.cordova.battery-status" source="plugins.cordova.io" />
+</widget>
