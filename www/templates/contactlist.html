@@ -1,0 +1,38 @@
+<ion-view view-title="Contact List">
+    <ion-header-bar class="bar-light bar-subheader">
+    <input type="search"
+      placeholder="Filter contacts..."
+      ng-model="search"
+      ng-focus="searchFocused = true"
+      ng-blur="searchFocused = false"
+      ng-change="scrollTop()">
+    <button ng-if="search.length"
+      class="button button-icon ion-ios7-close input-button"
+      ng-click="clearSearch()">
+    </button>
+  </ion-header-bar>
+    <ion-content padding="true">
+        
+		<ion-list show-delete="deleteMode">	
+  			<ion-item ng-repeat="contact in contacts" item="contact" href="#/tabs/editcontact/{{$index}}">
+  				<ion-delete-button class="ion-minus-circled" ng-click="DeleteContact(contact, {{$index}})">
+          		</ion-delete-button>
+    			{{contact.name}}, {{contact.age}}
+          		<ion-option-button class="button-assertive" ng-click="DeleteContact(contact, {{$index}})">
+            		Edit
+          		</ion-option-button>
+  			</ion-item>
+		</ion-list>
+    </ion-content>
+    <ion-footer-bar align-title="left" class="bar-assertive">
+    	<div class="buttons">
+    		<button class="button" ng-click="deleteMode = !deleteMode">Edit</button>
+  		</div>
+  		<h1 class="title">&nbsp;</h1>
+  		<div class="buttons" ng-click="doSomething()">
+    		<button class="button button-icon" ng-click="newContact()">
+        		<i class="icon ion-compose"></i>
+        	</button>
+  		</div>
+</ion-footer-bar>
+</ion-view>
